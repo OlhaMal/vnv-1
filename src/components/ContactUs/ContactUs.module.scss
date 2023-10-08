@@ -9,6 +9,14 @@
     rgba(0, 0, 0, 1) 48%
   );
 
+  // @media screen and (min-width: 768px) {
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(255, 255, 255, 1) 48%,
+  //     rgba(0, 0, 0, 1) 48%
+  //   );
+  // }
+
   @media screen and (min-width: 1240px) {
     background: linear-gradient(
       180deg,
@@ -29,9 +37,12 @@
   width: 100%;
   margin: 0 auto;
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+
   @media screen and (min-width: 1240px) {
     width: 1000px;
-    flex-direction: row-reverse;
   }
 }
 
@@ -44,10 +55,15 @@
   justify-content: flex-end;
   border-radius: 10px 10px 0 0;
 
+  @media screen and (min-width: 768px) {
+    width: 65%;
+    border-radius: 0 15px 15px 0;
+    padding: 20px 10px;
+  }
+
   @media screen and (min-width: 1240px) {
     width: 30%;
     height: 550px;
-    border-radius: 0 15px 15px 0;
   }
 
   svg {
@@ -70,9 +86,12 @@
   align-items: center;
   background-color: #fff;
 
+  @media screen and (min-width: 768px) {
+    border-radius: 15px 0 0 15px;
+  }
+
   @media screen and (min-width: 1240px) {
     width: 70%;
-    border-radius: 15px 0 0 15px;
     border-right: none;
   }
 }
@@ -83,7 +102,6 @@
 
   @media screen and (min-width: 1240px) {
     margin-top: 30px;
-
   }
 }
 
@@ -144,8 +162,12 @@
   flex-direction: column;
   gap: 20px;
 
+  @media screen and (min-width: 768px) {
+    gap: 15px;
+  }
+
   @media screen and (min-width: 1240px) {
-    gap: 25px; 
+    gap: 25px;
   }
 }
 
@@ -223,6 +245,10 @@
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
 
   @media screen and (min-width: 1240px) {
     margin-top: 25px;

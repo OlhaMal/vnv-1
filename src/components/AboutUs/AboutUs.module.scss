@@ -29,8 +29,15 @@
 .preferenceList {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 25px 25px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr;
+  }
 
   @media screen and (min-width: 1240px) {
     display: grid;
@@ -48,6 +55,10 @@
   padding: 15px 15px 20px 15px;
   color: rgba(255, 255, 255, 0.7);
   transition: all linear 0.3s;
+
+  // @media screen and (min-width: 768px) {
+  //   width: calc(100% / 2 - 25px);
+  // }
 
   @media screen and (min-width: 1240px) {
     padding: 15px;

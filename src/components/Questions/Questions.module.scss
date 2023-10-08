@@ -4,7 +4,7 @@
   padding-bottom: 90px;
 
   @media screen and (min-width: 1240px) {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
 }
 
@@ -36,6 +36,10 @@
   flex-wrap: wrap;
   transition: all 0.5s ease-in-out;
 
+  @media screen and (min-width: 768px)  {
+    gap: 10px 20px;
+  }
+
   @media screen and (min-width: 1240px)  {
     gap: 30px 30px;
   }
@@ -53,9 +57,13 @@
   position: relative;
   cursor: pointer;
 
-  @media screen and (min-width: 1240px) {
-    width: calc(100% / 2 - 15px);
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 10px);
     padding: 15px 10px 15px 15px;
+  }
+
+  @media screen and (min-width: 1240px)  {
+    width: calc(100% / 2 - 15px);
   }
 
   &.active {
