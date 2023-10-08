@@ -1,5 +1,11 @@
 @import-normalize; /* bring in normalize.css styles */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +13,162 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  background-color: inherit;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  background-color: inherit;
+  box-shadow: none;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.356);
+  border-radius: 50%;
+  margin: 0 4px;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.slick-dots li button {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: black;
+  font-size: 12px;
+}
+
+.slick-next {
+  right: -28px;
+}
+
+.slick-prev {
+  left: -28px;
+}
+
+.slick-next,
+.slick-prev {
+  width: 28px;
+  height: 60px;
+}
+
+.slick-list {
+  padding: 20px 0;
+}
+
+.react-tabs__tab--selected {
+  border: 1px solid #0b0b0b;
+  color: #0b0b0b;
+  border-radius: 50% 50%;
+}
+
+.roulette-pro-wrapper {
+  border: 2px solid #ccccd3;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1240px) {
+  .slick-next:before,
+  .slick-prev:before {
+    color: black;
+    font-size: 40px;
+  }
+
+  .slick-next {
+    right: -100px;
+  }
+
+  .slick-prev {
+    left: -100px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slick-list {
+    padding: 30px 0;
+  }
+
+  .slick-dots li {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.356);
+    border-radius: 50%;
+    margin: 0 4px;
+    transition: border 0.3s, background-color 0.3s;
+  }
+
+  .slick-dots li button {
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active {
+    border: 2px solid rgb(255, 255, 255);
+  }
+
+  .slick-dots li button:before {
+    display: none;
+  }
 }

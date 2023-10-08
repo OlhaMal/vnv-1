@@ -1,0 +1,123 @@
+@import '../../utils/_placeholder.scss';
+
+.aboutUsContainer {
+  background-color: #000;
+  padding-top: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1240px) {
+    height: 790px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+
+.title {
+  @extend %title;
+  color: #fff;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1240px) {
+    margin-bottom: 60px;
+  }
+}
+
+.preferenceList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1240px) {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    margin-bottom: 60px;
+  }
+}
+
+.preferenceCard {
+  background-color: rgba(141, 140, 156, 0.2);
+  width: 100%;
+  padding: 15px 15px 20px 15px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all linear 0.3s;
+
+  @media screen and (min-width: 1240px) {
+    padding: 15px;
+    height: 200px;
+  }
+}
+
+.preferenceCard:hover {
+  color: rgba(255, 255, 255, 1);
+
+  & .iconWrapper {
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 27% 73% 47% 53% / 28% 49% 51% 72%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1240px) {
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+}
+
+.icon {
+  fill: currentColor;
+  width: 12px;
+  height: 12px;
+}
+
+.cardText {
+  font-weight: 300;
+
+
+  @media screen and (min-width: 480px) {
+  text-align: center;
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUsBtn {
+  background-color: rgba(141, 140, 156, 0.4);
+  color: white;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid white;
+  box-shadow: 0 0 0 0 white;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 #afafba;
+  }
+
+  &:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 #afafba;
+  }
+}

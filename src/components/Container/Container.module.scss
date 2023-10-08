@@ -1,0 +1,6 @@
+@import '../../utils/_placeholder.scss';
+
+.container {
+  @extend %container;
+  position: relative;
+}
