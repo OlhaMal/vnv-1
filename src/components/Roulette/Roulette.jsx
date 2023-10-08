@@ -118,12 +118,8 @@ export const Roulette = () => {
         break;
     }
 
-    setIsWinner(true); // Set the winner status to true
+    setIsWinner(true);
     setIsFirstTime(false);
-
-    // setTimeout(() => {
-    //   setWinMessage('');
-    // }, 2000);
   };
 
   return (
