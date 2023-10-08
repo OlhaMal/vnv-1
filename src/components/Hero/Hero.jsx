@@ -18,7 +18,7 @@ export const Hero = () => {
           }}
         >
           <header className={scss.header}>
-            <a href="/" className={scss.logoLink}>
+            <a href="/vnv-sol/" className={scss.logoLink}>
               <img src={logoImage} alt="Logo" className={scss.logo} />
             </a>
           </header>
