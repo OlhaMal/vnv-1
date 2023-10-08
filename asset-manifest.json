@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vnv-sol/static/css/main.e999487e.css",
-    "main.js": "/vnv-sol/static/js/main.c4bd7533.js",
+    "main.css": "/vnv-sol/static/css/main.9f28357c.css",
+    "main.js": "/vnv-sol/static/js/main.c8fd6259.js",
     "static/media/NTHO.gif": "/vnv-sol/static/media/NTHO.8cf8dd9dbc4594f9b7de.gif",
     "static/media/first-frame.jpg": "/vnv-sol/static/media/first-frame.d47d7fe912cf1393dcea.jpg",
     "static/media/third-frame.jpg": "/vnv-sol/static/media/third-frame.ca85ea556a8dc9605dd0.jpg",
@@ -21,11 +21,11 @@
     "index.html": "/vnv-sol/index.html",
     "static/media/slick.woff": "/vnv-sol/static/media/slick.295183786cd8a1389865.woff",
     "static/media/arrow-down.svg": "/vnv-sol/static/media/arrow-down.7a2ce049727eda395385600003d182f0.svg",
-    "main.e999487e.css.map": "/vnv-sol/static/css/main.e999487e.css.map",
-    "main.c4bd7533.js.map": "/vnv-sol/static/js/main.c4bd7533.js.map"
+    "main.9f28357c.css.map": "/vnv-sol/static/css/main.9f28357c.css.map",
+    "main.c8fd6259.js.map": "/vnv-sol/static/js/main.c8fd6259.js.map"
   },
   "entrypoints": [
-    "static/css/main.e999487e.css",
-    "static/js/main.c4bd7533.js"
+    "static/css/main.9f28357c.css",
+    "static/js/main.c8fd6259.js"
   ]
 }
