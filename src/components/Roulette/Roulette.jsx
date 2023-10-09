@@ -156,7 +156,7 @@ export const Roulette = () => {
           </div>
         </motion.div>
         {isWinner && (
-          <Confetti // Show confetti when the user wins
+          <Confetti 
             width={window.innerWidth}
             height={window.innerHeight}
             style={{ position: 'fixed' }}

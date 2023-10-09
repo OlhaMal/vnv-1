@@ -20,8 +20,7 @@ export const ContactUs = () => {
 
   const [selectedTabIndex, setSelectedTabIndex] = useState(() => {
     const storedIndex = localStorage.getItem('selectedTabIndex');
-    // Use parseInt to convert the stored value to a number
-    return storedIndex !== null ? parseInt(storedIndex, 10) : 0; // Default to 0 if not found in localStorage
+    return storedIndex !== null ? parseInt(storedIndex, 10) : 0;
   });
 
   const [ref, inView] = useInView({
